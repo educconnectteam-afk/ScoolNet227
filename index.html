@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScoolNet - Tous connectés pour la réussite</title>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#000000">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <!-- HEADER -->
+    <header id="header">
+        <div class="container header-content">
+            <a href="#accueil" class="logo">
+                <div class="logo-icon">S</div>
+                <div class="logo-text">Scool<span>Net</span></div>
+            </a>
+
+            <!-- Menu Desktop -->
+            <nav class="nav-desktop">
+                <a href="#accueil">Accueil</a>
+                <a href="#features">Fonctionnalités</a>
+                <a href="#download">Télécharger</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <div class="header-actions">
+                <!-- Bouton Dark Mode -->
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+
+                <!-- Menu Mobile Hamburger -->
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <!-- Menu Mobile -->
+            <div class="nav-mobile" id="navMobile">
+                <a href="#accueil" class="mobile-link">
+                    <i class="fas fa-home"></i> Accueil
+                </a>
+                <a href="#features" class="mobile-link">
+                    <i class="fas fa-star"></i> Fonctionnalités
+                </a>
+                <a href="#download" class="mobile-link">
+                    <i class="fas fa-download"></i> Télécharger
+                </a>
+                <a href="#contact" class="mobile-link">
+                    <i class="fas fa-envelope"></i> Contact
+                </a>
+                <div class="mobile-theme">
+                    <span>Thème</span>
+                    <button class="theme-toggle-mobile" id="themeToggleMobile">
+                        <i class="fas fa-moon"></i> Mode sombre
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="accueil" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>
+                    ScoolNet<br>
+                    <span class="hero-highlight">L'éducation connectée</span>
+                </h1>
+                <div class="slogan">
+                    <i class="fas fa-quote-left"></i> Tous connectés pour la réussite <i class="fas fa-quote-right"></i>
+                </div>
+                <p class="hero-description">
+                    La première plateforme qui réunit élèves,étudiants, parents et professeurs dans un espace unique, sécurisé et collaboratif.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#" class="btn btn-primary" onclick="showModal('ios'); return false;">
+                        <i class="fab fa-apple"></i> App Store
+                    </a>
+                    <a href="#" class="btn btn-secondary" onclick="showModal('android'); return false;">
+                        <i class="fab fa-google-play"></i> Google Play
+                    </a>
+                </div>
+                <div class="store-badges">
+                    <a href="#" onclick="showModal('ios'); return false;">
+                        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Télécharger sur l'App Store" class="store-badge">
+                    </a>
+                    <a href="#" onclick="showModal('android'); return false;">
+                        <img src="https://play.google.com/intl/en_us/badges/static/images/badges/fr_badge_web_generic.png" alt="Télécharger sur Google Play" class="store-badge">
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="phone-mockup">
+                    <div class="phone-screen">
+                        <div class="phone-header">
+                            <span><i class="fas fa-graduation-cap"></i> ScoolNet</span>
+                            <span><i class="fas fa-search"></i></span>
+                        </div>
+                        <div class="phone-post">
+                            <div class="phone-post-header">
+                                <div class="phone-avatar"></div>
+                                <div>
+                                    <strong>Prof. maths</strong>
+                                    <span class="phone-time">· 2h</span>
+                                </div>
+                            </div>
+                            <div><i class="fas fa-pencil-alt"></i> Devoir de maths pour vendredi</div>
+                        </div>
+                        <div class="phone-post">
+                            <div class="phone-post-header">
+                                <div class="phone-avatar"></div>
+                                <div>
+                                    <strong>Parent d'élève</strong>
+                                    <span class="phone-time">· 3h</span>
+                                </div>
+                            </div>
+                            <div><i class="fas fa-question-circle"></i> Réunion parents-profs ?</div>
+                        </div>
+                        <div class="phone-post">
+                            <div class="phone-post-header">
+                                <div class="phone-avatar"></div>
+                                <div>
+                                    <strong>Lycée LAKD</strong>
+                                    <span class="phone-time">· 5h</span>
+                                </div>
+                            </div>
+                            <div><i class="fas fa-calendar-alt"></i> Sortie scolaire le 15 mai</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FEATURES SECTION -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Fonctionnalités</h2>
+                <p class="section-subtitle">Tout ce dont vous avez besoin pour une communication scolaire simplifiée</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-newspaper"></i>
+                    </div>
+                    <h3>Fil d'actualité</h3>
+                    <p>Partagez photos, événements et informations avec toute la communauté scolaire en temps réel.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-comment-dots"></i>
+                    </div>
+                    <h3>Messagerie instantanée</h3>
+                    <p>Communiquez en privé ou en groupe avec les parents, professeurs et élèves en toute sécurité.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Groupes de classe</h3>
+                    <p>Créez des espaces dédiés pour chaque classe, matière ou activité extrascolaire.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- DOWNLOAD SECTION -->
+    <section id="download" class="download">
+        <div class="container">
+            <div class="download-content">
+                <h2 class="section-title">Prêt à rejoindre la communauté ?</h2>
+                <p class="download-description">Téléchargez ScoolNet maintenant et faites partie de la révolution éducative</p>
+                
+                <div class="qr-container">
+                    <div class="qr-code" onclick="showModal('qr'); return false;">
+                        <div class="qr-code-inner">
+                            <i class="fas fa-qrcode"></i>
+                            <span>Scannez</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="download-buttons">
+                    <a href="#" class="btn-store" onclick="showModal('ios'); return false;">
+                        <i class="fab fa-apple"></i>
+                        <div class="store-text">
+                            <small>Télécharger sur</small>
+                            <strong>App Store</strong>
+                        </div>
+                    </a>
+                    <a href="#" class="btn-store" onclick="showModal('android'); return false;">
+                        <i class="fab fa-google-play"></i>
+                        <div class="store-text">
+                            <small>Disponible sur</small>
+                            <strong>Google Play</strong>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="security-badge">
+                    <span><i class="fas fa-shield-alt"></i> Données sécurisées</span>
+                    <span><i class="fas fa-ban"></i> Sans publicité</span>
+                    <span><i class="fas fa-gift"></i> Gratuit</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contactez-nous</h2>
+                <p class="section-subtitle">Une question ? Nous somme là pour vous répondre</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>contact@scoolnet.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h4>Téléphone</h4>
+                            <p>+227 87910787</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Adresse</h4>
+                            <p>Zinder, Niger</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="Votre nom" required>
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Votre email" required>
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Votre message" rows="5" required></textarea>
+                        <i class="fas fa-pencil-alt"></i>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> Envoyer
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column footer-about">
+                    <div class="footer-logo">
+                        <div class="logo-icon">S</div>
+                        <span>ScoolNet</span>
+                    </div>
+                    <p class="footer-description">
+                        "Tous connectés pour la réussite"<br>
+                        La plateforme éducative qui rapproche toute la communauté scolaire.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Produit</h4>
+                    <ul>
+                        <li><a href="#features"><i class="fas fa-chevron-right"></i> Fonctionnalités</a></li>
+                        <li><a href="#download"><i class="fas fa-chevron-right"></i> Télécharger</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Mises à jour</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Entreprise</h4>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> À propos</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Carrières</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Légal</h4>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Confidentialité</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Conditions</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Mentions légales</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 ScoolNet. Tous droits réservés. Conçu pour l'éducation Nigérienne.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODAL -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <div class="modal-icon">
+                <i class="fas fa-rocket"></i>
+            </div>
+            <h3>ScoolNet arrive bientôt!</h3>
+            <p>L'application est actuellement en cours de développement et sera prochainement disponible sur les stores.<br>Laissez votre e-mail afin d'être informé(e) dès son lancement.</p>
+            <div class="modal-form">
+                <input type="email" placeholder="Votre email" class="modal-input" id="modalEmail">
+                <button class="btn btn-primary modal-btn" onclick="notifyMe()">
+                    <i class="fas fa-bell"></i> Me prévenir
+                </button>
+            </div>
+            <button class="modal-close" onclick="closeModal()">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+    <script>
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("service-worker.js");
+}
+</script>
+</body>
+</html>
